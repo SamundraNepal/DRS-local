@@ -1,7 +1,8 @@
 {
   "CTVS_Diseases_and_Procedures": [
     {
-      "name": { "en": "Varicose Veins", "ne": "वरिसोस भेन" },
+      "disease_name": { "en": "Varicose Veins", "ne": "वरिसोस भेन" },
+      "disease_image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyTiLC5SW8IsXB-ZZ7wb30-47NFg7qjMfo42rGkiE9WEC1NE_JIAf5uZgZHTOqP-c1FOM&usqp=CAU",
       "Conditions": [
         {
           "en": "Chronic Venous Insufficiency",
@@ -22,7 +23,13 @@
       ]
     },
     {
-      "name": { "en": "Deep Vein Thrombosis", "ne": "डीप भेन थ्रोम्बोसिस" },
+      "disease_name": {
+        "en": "Deep Vein Thrombosis",
+        "ne": "डीप भेन थ्रोम्बोसिस"
+      },
+
+      "disease_image": "https://www.penumbrainc.com/wp-content/uploads/2023/02/Deep-Vein-Thrombosis-thumb.webp",
+
       "Conditions": [
         { "en": "Acute DVT", "ne": "एक्युट डीभीटी" },
         {
@@ -44,7 +51,13 @@
       ]
     },
     {
-      "name": { "en": "Vascular Malformations", "ne": "भास्कुलर मालफर्मेसन" },
+      "disease_name": {
+        "en": "Vascular Malformations",
+        "ne": "भास्कुलर मालफर्मेसन"
+      },
+
+      "disease_image": "https://t3.ftcdn.net/jpg/14/23/54/68/360_F_1423546852_fBYjnGKngGx25BOTS15Kxnrnin3RSIcm.jpg",
+
       "Types": [
         {
           "en": "Arteriovenous Malformations (AVM)",
@@ -63,25 +76,14 @@
       ]
     },
     {
-      "name": { "en": "Hemodialysis Access", "ne": "हिमोडायलाइसिस एक्सेस" },
-      "Procedures": [
-        {
-          "en": "Arteriovenous (AV) Fistula Creation",
-          "ne": "आर्टेरियोभेनस (AV) फिस्टुला सिर्जना"
-        },
-        { "en": "AV Graft Placement", "ne": "AV ग्राफ्ट प्लेसमेन्ट" },
-        {
-          "en": "Central Venous Catheter Insertion",
-          "ne": "सेंट्रल भेनस क्याथेटर इन्सर्शन"
-        }
-      ]
-    },
-    {
-      "name": {
+      "disease_name": {
         "en": "Peripheral Arterial Disease",
         "ne": "पेरिफेरल आर्टेरियल डिजिज"
       },
-      "Conditions": [
+
+      "disease_image": "https://lirp.cdn-website.com/242f6fc1/dms3rep/multi/opt/shutterstock_1535065904-640w.jpg",
+
+      "disease_conditions": [
         {
           "en": "Atherosclerosis of Lower Limbs",
           "ne": "तल्लो अंगको एथेरोस्क्लेरोसिस"
@@ -102,7 +104,10 @@
       ]
     },
     {
-      "name": { "en": "Diabetic Foot", "ne": "डायबेटिक फुट" },
+      "disease_name": { "en": "Diabetic Foot", "ne": "डायबेटिक फुट" },
+
+      "disease_image": "https://media.istockphoto.com/id/653029570/vector/vector-illustration-of-a-medical-diabetic-foot.jpg?s=612x612&w=0&k=20&c=CP7B8rkO1nNEg4x0qaDPXUPGKYjK0BV2gpRCsNloUBs=",
+
       "Complications": [
         { "en": "Ulcers", "ne": "घाउहरू" },
         { "en": "Infections", "ne": "संक्रमणहरू" },
@@ -122,9 +127,10 @@
       ]
     }
   ],
+
   "Doctors": [
     {
-      "image": "https://static.vecteezy.com/system/resources/thumbnails/026/375/249/small_2x/ai-generative-portrait-of-confident-male-doctor-in-white-coat-and-stethoscope-standing-with-arms-crossed-and-looking-at-camera-photo.jpg",
+      "image": "https://img.freepik.com/free-photo/confident-indian-female-doctor_53876-15439.jpg",
       "name": { "en": "Dr. Anjali Sharma", "ne": "डा. अन्जली शर्मा" },
       "experience": { "en": "12", "ne": "१२" },
       "availableTime": {
@@ -133,30 +139,39 @@
       }
     },
     {
-      "image": "https://static.vecteezy.com/system/resources/thumbnails/026/375/249/small_2x/ai-generative-portrait-of-confident-male-doctor-in-white-coat-and-stethoscope-standing-with-arms-crossed-and-looking-at-camera-photo.jpg",
-      "name": { "en": "Dr. Anjali Sharma", "ne": "डा. अन्जली शर्मा" },
-      "experience": { "en": "12", "ne": "१२" },
+      "image": "https://img.freepik.com/free-photo/smiling-young-male-doctor-uniform_1303-17818.jpg",
+      "name": { "en": "Dr. Ramesh Adhikari", "ne": "डा. रमेश अधिकारी" },
+      "experience": { "en": "8", "ne": "८" },
       "availableTime": {
-        "en": "Mon - Fri: 9 AM - 5 PM",
-        "ne": "सोमबार - शुक्रबार: बिहान ९ देखि साँझ ५ बजे सम्म"
+        "en": "Tue - Sat: 10 AM - 6 PM",
+        "ne": "मङ्गलबार - शनिबार: बिहान १० देखि साँझ ६ बजे सम्म"
       }
     },
     {
-      "image": "https://static.vecteezy.com/system/resources/thumbnails/026/375/249/small_2x/ai-generative-portrait-of-confident-male-doctor-in-white-coat-and-stethoscope-standing-with-arms-crossed-and-looking-at-camera-photo.jpg",
-      "name": { "en": "Dr. Anjali Sharma", "ne": "डा. अन्जली शर्मा" },
-      "experience": { "en": "12", "ne": "१२" },
+      "image": "https://img.freepik.com/free-photo/portrait-successful-young-doctor_329181-10361.jpg",
+      "name": { "en": "Dr. Sita Koirala", "ne": "डा. सीता कोइराला" },
+      "experience": { "en": "15", "ne": "१५" },
       "availableTime": {
-        "en": "Mon - Fri: 9 AM - 5 PM",
-        "ne": "सोमबार - शुक्रबार: बिहान ९ देखि साँझ ५ बजे सम्म"
+        "en": "Mon - Fri: 8 AM - 4 PM",
+        "ne": "सोमबार - शुक्रबार: बिहान ८ देखि साँझ ४ बजे सम्म"
       }
     },
     {
-      "image": "https://static.vecteezy.com/system/resources/thumbnails/026/375/249/small_2x/ai-generative-portrait-of-confident-male-doctor-in-white-coat-and-stethoscope-standing-with-arms-crossed-and-looking-at-camera-photo.jpg",
-      "name": { "en": "Dr. Anjali Sharma", "ne": "डा. अन्जली शर्मा" },
-      "experience": { "en": "12", "ne": "१२" },
+      "image": "https://img.freepik.com/free-photo/smiling-mature-doctor-with-stethoscope_23-2147896045.jpg",
+      "name": { "en": "Dr. Prakash Shrestha", "ne": "डा. प्रकाश श्रेष्ठ" },
+      "experience": { "en": "20", "ne": "२०" },
       "availableTime": {
-        "en": "Mon - Fri: 9 AM - 5 PM",
-        "ne": "सोमबार - शुक्रबार: बिहान ९ देखि साँझ ५ बजे सम्म"
+        "en": "Sun - Thu: 9 AM - 5 PM",
+        "ne": "आइतबार - बिहीबार: बिहान ९ देखि साँझ ५ बजे सम्म"
+      }
+    },
+    {
+      "image": "https://img.freepik.com/free-photo/portrait-smiling-asian-female-doctor-white-coat-with-stethoscope-crossed-arms-standing-hospital-hallway_657921-410.jpg",
+      "name": { "en": "Dr. Manisha Gautam", "ne": "डा. मनिषा गौतम" },
+      "experience": { "en": "10", "ne": "१०" },
+      "availableTime": {
+        "en": "Mon - Sat: 11 AM - 7 PM",
+        "ne": "सोमबार - शनिबार: बिहान ११ देखि साँझ ७ बजे सम्म"
       }
     }
   ]

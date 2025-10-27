@@ -1,10 +1,11 @@
 const API_URL = process.env.NEXT_PUBLIC_API_URL; // e.g., http://52.62.243.131:3000
+const localAPI = process.env.NEXT_PUBLIC_API_LOCAL;
 
 export async function HandleSignUp({ formData }: any) {
   try {
     const res = await fetch(`${API_URL}/admin/api/sign_up`, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
       body: JSON.stringify(formData), // <-- body outside headers
     });
 
@@ -23,8 +24,8 @@ export async function HandleSignUp({ formData }: any) {
 export async function HandleLogIn({ formData }: any) {
   try {
     const res = await fetch(`${API_URL}/admin/api/log_in`, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
       body: JSON.stringify(formData), // <-- body outside headers
     });
 
@@ -43,7 +44,7 @@ export async function HandleLogIn({ formData }: any) {
 export async function HandleAddDoctors({ formData }: any) {
   try {
     const res = await fetch(`${API_URL}/admin/api/admin_doctors`, {
-      method: 'POST',
+      method: "POST",
       body: formData, // <-- body outside headers
     });
 
@@ -62,7 +63,7 @@ export async function HandleAddDoctors({ formData }: any) {
 export async function HandleAddService({ formData }: any) {
   try {
     const res = await fetch(`${API_URL}/admin/api/admin_services`, {
-      method: 'POST',
+      method: "POST",
       body: formData, // <-- body outside headers
     });
 
@@ -80,15 +81,9 @@ export async function HandleAddService({ formData }: any) {
 
 export async function GetDoctorsData() {
   try {
-    const res = await fetch(`${API_URL}/admin/api/get_doctors`, {
-      method: 'GET',
-    });
+    const res = await fetch(`${localAPI}jsonfiles/doctors.json`);
 
     const result = await res.json();
-
-    if (!res.ok || !result.success) {
-      return { success: false, message: result.message };
-    }
 
     return result; // success
   } catch (error: any) {
@@ -98,15 +93,9 @@ export async function GetDoctorsData() {
 
 export async function GetServiceData() {
   try {
-    const res = await fetch(`${API_URL}/admin/api/get_service`, {
-      method: 'GET',
-    });
+    const res = await fetch(`${localAPI}/jsonfiles/services.json`);
 
     const result = await res.json();
-
-    if (!res.ok || !result.success) {
-      return { success: false, message: result.message };
-    }
 
     return result; // success
   } catch (error: any) {
@@ -117,8 +106,8 @@ export async function GetServiceData() {
 export async function DeleteDoctorData(el: any, type: string) {
   try {
     const res = await fetch(`${API_URL}/admin/api/admin_delete_doctors`, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ el, type }),
     });
 
@@ -137,7 +126,7 @@ export async function DeleteDoctorData(el: any, type: string) {
 export async function AdminLogOut() {
   try {
     const res = await fetch(`${API_URL}/admin/api/admin_log_out`, {
-      method: 'POST',
+      method: "POST",
     });
 
     const result = await res.json();
@@ -155,8 +144,8 @@ export async function AdminLogOut() {
 export async function HandleBookForm({ bookForm }: any) {
   try {
     const res = await fetch(`${API_URL}/admin/api/book_form`, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
       body: JSON.stringify(bookForm), // <-- body outside headers
     });
 
